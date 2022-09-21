@@ -41,6 +41,26 @@ li {
   align-items: center;
 }
 
+.header__notifications-count {
+  background-color: var(--blue);
+  color: var(--white);
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.header__btn {
+  background-color: inherit;
+  border: none;
+  font-size: 0.9rem;
+  color: var(--dark-grey-blue);
+  cursor: pointer;
+}
+
+.notifications__list {
+  margin: 1rem;
+}
+
 .notifications__item {
   margin: 0.6rem auto;
   padding: 1rem;
@@ -50,6 +70,7 @@ li {
 }
 
 .unread {
+  cursor: pointer;
   background-color: var(--very-light-grey-blue);
 }
 
