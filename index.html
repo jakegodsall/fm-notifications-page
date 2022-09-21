@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- displays site properly based on user's device -->
 
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" /> -->
 
         <title>Frontend Mentor | Notifications page</title>
 
@@ -16,13 +16,13 @@
         <header class="header">
             <div class="header__notification-title">
                 <h2>Notifications</h2>
-                <div>3</div>
+                <p class="header__notifications-count" id="header__notifications-count"></p>
             </div>
-            <button>Mark all as read</button>
+            <button id="header__btn">Mark all as read</button>
         </header>
         <main class="notifcations">
-            <ul class="notifications__list">
-                <li class="notifications__item">
+            <ul class="notifications__list" id="notifications__list">
+                <li class="notifications__item unread">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-mark-webber.webp"
@@ -36,7 +36,7 @@
                         <p class="notifications__time">1m ago</p>
                     </div>
                 </li>
-                <li class="notifications__item">
+                <li class="notifications__item unread">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-angela-gray.webp"
@@ -49,7 +49,7 @@
                         <p class="notifications__time">5m ago</p>
                     </div>
                 </li>
-                <li class="notifications__item">
+                <li class="notifications__item unread">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-jacob-thompson.webp"
@@ -63,7 +63,7 @@
                         <p class="notifications__time">1 day ago</p>
                     </div>
                 </li>
-                <li class="notifications__item">
+                <li class="notifications__item unread">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-rizky-hasanuddin.webp"
@@ -77,7 +77,7 @@
                         <p class="notifications__time">5 days ago</p>
                     </div>
                 </li>
-                <li class="notifications__item">
+                <li class="notifications__item unread">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-kimberly-smith.webp"
@@ -91,7 +91,7 @@
                         <p class="notifications__time">1 week ago</p>
                     </div>
                 </li>
-                <li class="notifications__item">
+                <li class="notifications__item unread">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-nathan-peterson.webp"
@@ -105,7 +105,7 @@
                         <p class="notifications__time">2 weeks ago</p>
                     </div>
                 </li>
-                <li class="notifications__item">
+                <li class="notifications__item unread">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-anna-kim.webp"
@@ -120,21 +120,6 @@
                 </li>
             </ul>
         </main>
-
-        <!-- Notifications 3 Mark all as read Mark Webber reacted to your recent post
-        My first tournament today! 1m ago Angela Gray followed you 5m ago Jacob
-        Thompson has joined your group Chess Club 1 day ago Rizky Hasanuddin
-        sent you a private message 5 days ago Hello, thanks for setting up the
-        Chess Club. I've been a member for a few weeks now and I'm alrea∏dy
-        having lots of fun and improving my game. Kimberly Smith commented on
-        your picture 1 week ago Nathan Peterson reacted to your recent post 5
-        end-game strategies to increase your win rate 2 weeks ago Anna Kim left
-        the group Chess Club 2 weeks ago -->
-
-        <!-- <div class="attribution">
-            Challenge by
-            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-        </div> -->
+        <script src="js/script.js"></script>
     </body>
 </html>
