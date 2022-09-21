@@ -25,6 +25,11 @@ li {
   padding-left: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 :root {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
@@ -34,11 +39,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 1rem;
 }
 
 .header__notification-title {
   display: flex;
   align-items: center;
+  font-size: 0.9rem;
 }
 
 .header__notifications-count {
@@ -57,12 +64,16 @@ li {
   cursor: pointer;
 }
 
+.header__btn:hover {
+  color: var(--blue);
+}
+
 .notifications__list {
   margin: 1rem;
 }
 
 .notifications__item {
-  margin: 0.6rem auto;
+  margin: 0.6rem 0;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -70,18 +81,19 @@ li {
 }
 
 .unread {
-  cursor: pointer;
   background-color: var(--very-light-grey-blue);
 }
 
 .notifications__image {
   width: 3rem;
   margin-right: 0.5rem;
+  align-self: flex-start;
 }
 
 .notifications__text-content {
   color: var(--dark-grey-blue);
   margin: 0;
+  font-size: 0.9rem;
 }
 
 .notifications__author {
@@ -91,5 +103,30 @@ li {
 
 .notifications__time {
   color: var(--grey-blue);
+  font-size: 0.9rem;
   margin: 0;
+  margin-top: 0.2rem;
+}
+
+.reaction .notifications__reaction-target {
+  font-weight: 800;
+}
+
+.group-join .notifications__group,
+.group-leave .notifications__group {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.comment-image .notifications__comment-image {
+  width: 3rem;
+  align-self: flex-start;
+}
+
+.direct-message .notifications__dm {
+  margin-top: 0.5rem;
+  border: 1px solid var(--light-grey-blue-2);
+  border-radius: 5px;
+  color: var(--dark-grey-blue);
+  font-size: 0.9rem;
 }/*# sourceMappingURL=main.css.map */

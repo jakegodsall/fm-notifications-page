@@ -1,5 +1,7 @@
+// General notification styles
+
 .notifications__item {
-    margin: 0.6rem auto;
+    margin: 0.6rem 0;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -7,18 +9,20 @@
 }
 
 .unread {
-    cursor: pointer;
+    // cursor: pointer;
     background-color: var(--very-light-grey-blue);
 }
 
 .notifications__image {
     width: 3rem;
     margin-right: 0.5rem;
+    align-self: flex-start;
 }
 
 .notifications__text-content {
     color: var(--dark-grey-blue);
     margin: 0;
+    font-size: 0.9rem;
 }
 
 .notifications__author {
@@ -28,5 +32,40 @@
 
 .notifications__time {
     color: var(--grey-blue);
+    font-size: 0.9rem;
     margin: 0;
+    margin-top: 0.2rem;
+}
+
+// Types of notification styles
+
+.reaction {
+    .notifications__reaction-target {
+        font-weight: 800;
+    }
+}
+
+.group-join,
+.group-leave {
+    .notifications__group {
+        color: var(--blue);
+        font-weight: 800;
+    }
+}
+
+.comment-image {
+    .notifications__comment-image {
+        width: 3rem;
+        align-self: flex-start;
+    }
+}
+
+.direct-message {
+    .notifications__dm {
+        margin-top: 0.5rem;
+        border: 1px solid var(--light-grey-blue-2);
+        border-radius: 5px;
+        color: var(--dark-grey-blue);
+        font-size: 0.9rem;
+    }
 }

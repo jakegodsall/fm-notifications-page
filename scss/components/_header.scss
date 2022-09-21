@@ -2,11 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 1rem;
 }
 
 .header__notification-title {
     display: flex;
     align-items: center;
+    font-size: 0.9rem;
 }
 
 .header__notifications-count {
@@ -23,4 +25,8 @@
     font-size: 0.9rem;
     color: var(--dark-grey-blue);
     cursor: pointer;
+}
+
+.header__btn:hover {
+    color: var(--blue);
 }

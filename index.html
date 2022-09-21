@@ -22,7 +22,7 @@
         </header>
         <main class="notifcations">
             <ul class="notifications__list" id="notifications__list">
-                <li class="notifications__item unread">
+                <li class="notifications__item unread reaction">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-mark-webber.webp"
@@ -32,11 +32,14 @@
                         <p class="notifications__text-content">
                             <span class="notifications__author">Mark Webber</span> reacted to your
                             recent post
+                            <a href="#" class="notifications__reaction-target"
+                                >My first tournament today!</a
+                            >
                         </p>
                         <p class="notifications__time">1m ago</p>
                     </div>
                 </li>
-                <li class="notifications__item unread">
+                <li class="notifications__item unread follow">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-angela-gray.webp"
@@ -49,7 +52,7 @@
                         <p class="notifications__time">5m ago</p>
                     </div>
                 </li>
-                <li class="notifications__item unread">
+                <li class="notifications__item unread group-join">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-jacob-thompson.webp"
@@ -58,12 +61,12 @@
                     <div class="notifications__content">
                         <p class="notifications__text-content">
                             <span class="notifications__author">Jacob Thompson</span> has joined
-                            your group
+                            your group <a href="#" class="notifications__group">Chess Club</a>
                         </p>
                         <p class="notifications__time">1 day ago</p>
                     </div>
                 </li>
-                <li class="notifications__item unread">
+                <li class="notifications__item unread direct-message">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-rizky-hasanuddin.webp"
@@ -75,9 +78,13 @@
                             private message
                         </p>
                         <p class="notifications__time">5 days ago</p>
+                        <fieldset class="notifications__dm">
+                            Hello, thanks for setting up the Chess Club. I've been a member for a
+                            few weeks now and I'm already having lots of fun and improving my game.
+                        </fieldset>
                     </div>
                 </li>
-                <li class="notifications__item unread">
+                <li class="notifications__item unread comment-image">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-kimberly-smith.webp"
@@ -90,8 +97,13 @@
                         </p>
                         <p class="notifications__time">1 week ago</p>
                     </div>
+                    <img
+                        class="notifications__comment-image"
+                        src="assets/images/image-chess.webp"
+                        alt=""
+                    />
                 </li>
-                <li class="notifications__item unread">
+                <li class="notifications__item unread reaction">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-nathan-peterson.webp"
@@ -101,11 +113,14 @@
                         <p class="notifications__text-content">
                             <span class="notifications__author">Nathan Peterson</span> reacted to
                             your recent post
+                            <a href="#" class="notifications__reaction-target"
+                                >5 end-game strategies to increase your win rate</a
+                            >
                         </p>
                         <p class="notifications__time">2 weeks ago</p>
                     </div>
                 </li>
-                <li class="notifications__item unread">
+                <li class="notifications__item unread group-leave">
                     <img
                         class="notifications__image"
                         src="assets/images/avatar-anna-kim.webp"
@@ -114,6 +129,7 @@
                     <div class="notifications__content">
                         <p class="notifications__text-content">
                             <span class="notifications__author">Anna Kim</span> left the group
+                            <a href="#" class="notifications__group">Chess Club</a>
                         </p>
                         <p class="notifications__time">2 weeks ago</p>
                     </div>
