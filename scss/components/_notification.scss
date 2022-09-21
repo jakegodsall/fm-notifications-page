@@ -1,0 +1,28 @@
+.notifications__item {
+    background-color: var(--very-light-grey-blue);
+    margin: 0.6rem auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.notifications__image {
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+.notifications__text-content {
+    color: var(--dark-grey-blue);
+    margin: 0;
+}
+
+.notifications__author {
+    font-weight: 800;
+    color: var(--very-dark-blue);
+}
+
+.notifications__time {
+    color: var(--grey-blue);
+    margin: 0;
+}
