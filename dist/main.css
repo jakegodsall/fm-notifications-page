@@ -30,6 +30,16 @@ a {
   color: inherit;
 }
 
+body {
+  margin: 0;
+  background-color: var(--light-grey-blue-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 :root {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
@@ -39,7 +49,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
 }
 
 .header__notification-title {
@@ -66,10 +75,6 @@ a {
 
 .header__btn:hover {
   color: var(--blue);
-}
-
-.notifications__list {
-  margin: 1rem;
 }
 
 .notifications__item {
@@ -118,6 +123,13 @@ a {
   font-weight: 800;
 }
 
+.comment-image {
+  justify-content: space-between;
+}
+.comment-image .notifications__without-image {
+  display: flex;
+  flex-direction: row;
+}
 .comment-image .notifications__comment-image {
   width: 3rem;
   align-self: flex-start;
@@ -129,4 +141,18 @@ a {
   border-radius: 5px;
   color: var(--dark-grey-blue);
   font-size: 0.9rem;
+}
+
+.container {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  max-width: min(100%, 700px);
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    min-width: 400px;
+    margin: 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -54,6 +54,12 @@
 }
 
 .comment-image {
+    justify-content: space-between;
+
+    .notifications__without-image {
+        display: flex;
+        flex-direction: row;
+    }
     .notifications__comment-image {
         width: 3rem;
         align-self: flex-start;
